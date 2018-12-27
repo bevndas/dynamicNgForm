@@ -31,5 +31,7 @@ testForm: FormGroup;
     const control = <FormArray> this.testForm.controls['address'];
     control.removeAt(i);
   }
-
+save() {
+    console.log('formData', this.testForm.value);
+}
 }
